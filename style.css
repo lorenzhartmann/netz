@@ -5,6 +5,8 @@
 html {
   font-size: 25px;
   scroll-behavior: smooth;
+
+  
 }
 body {
   width: 100%;
@@ -19,12 +21,15 @@ body {
     left: calc((100vw - 1200px) / 2);
   }
 }
-
+@media (max-width: 1199px) { html {font-size: 21px; } }
+@media (max-width: 900px) { html {font-size: 16px; }}
+@media (max-width: 700px) { html {font-size: 14px; }}
+@media (max-width: 500px) { html {font-size: 10px; }}
 main {  }
 
 
 .navbar {  overflow: hidden;  }
-.navbar a {float: left ;color:#333 ;text-align: center;padding: 14px 14px;text-decoration: none;font-size: 25px;}
+.navbar a {float: left ;color:#333 ;text-align: center;padding: 14px 14px;text-decoration: none;font-size: 1rem;}
 .navbar a:hover {background-color:#7a9a57;color: black; }
 .navbar a.active {background-color: #4a774e;color: white;}
 .menuitems {
@@ -32,10 +37,7 @@ main {  }
   padding-left: var(--page-padding)/2;}
 a{color: inherit;}
 
-@media (max-width: 1199px) { html {font-size: 21px; } .navbar a {font-size: 21px;} }
-@media (max-width: 900px) { html {font-size: 16px; }.navbar a {font-size: 16px;}}
-@media (max-width: 700px) { html {font-size: 14px; }.navbar a {font-size: 14px;}}
-@media (max-width: 500px) { html {font-size: 10px; }.navbar a {font-size: 10px;}}
+
 
 img {width: 50%;  display: block; margin: auto; object-fit: cover; }
 
