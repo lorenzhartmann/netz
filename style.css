@@ -19,7 +19,7 @@ body {
     left: calc((100vw - 1200px) / 2);
   }
 }
-
+@media (max-width: 700) { html {font-size: 15px; }}
 main {  }
 
 
